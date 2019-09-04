@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+系咧
 
 You can use the [editor on GitHub](https://github.com/danbao571/myshi/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
