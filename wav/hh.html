@@ -4,12 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <title>哩埋吓下你艺</title>
+    <style type="text/css">
+        body{
+            background-image: url(峰.jpg);
+            background-size: 100% 100%;
+            height: 100%;
+        }
+        @keyframes hh {
+
+            0% {opacity:0}
+            25% {opacity:100}
+            50%{opacity:0}
+            100%{opacity:0}
+        }
+        @keyframes xx {
+
+            0% {opacity:0}
+            25% {opacity:0}
+            50%{opacity:100}
+            100%{opacity:0}
+        }
+        p{
+            font-size: 100px;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        #wan{
+            animation: hh 2s infinite;
+        }
+        #an{
+            animation: xx 2s infinite;
+        }
+    </style>
     <script>
         alert("整首歌仔艺");
     </script>
 </head>
 <body>
-    <audio  src="wav/1.wav" controls="controls">
+    <audio src="wav/1.wav" autoplay="autoplay" >
         </audio>
+    <p id="wan"> 晚 </p>
+    <p id="an"> 安 </p>>
 </body>
 </html>
