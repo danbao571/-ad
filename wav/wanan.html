@@ -8,7 +8,7 @@
         body{
             background-image: url(./峰.jpg);
             background-size: 100% 100%;
-            position: absolute;
+            position: relative;
         }
         @keyframes hh {
 
@@ -31,7 +31,7 @@
             text-align: center;
         }
         #wan{
-            color: #ffffff;
+            color: #ff43f6;
             animation: hh 2s infinite;
         }
         #an{
@@ -41,22 +41,9 @@
     <script>
         alert("整首歌仔艺");
     </script>
-    <script>
-        function audioAutoPLay(id) {
-            var audio = document.getElementById(id);
-            audio.play();
-            document.addEventListener("WeixinJSBridgeReady",function () {
-                audio.play();
-            },false);
-            document.addEventListener("YixinJSBridgeReady",function () {
-                audio.play();
-            },false);
-
-        }
-    </script>>
 </head>
-<body onload="audioAutoPLay('bgm');">
-<audio  id="bgm" src="wav/1.wav" preload="auto"  autoplay="autoplay" >
+<body >
+<audio src="wav/1.wav"  autoplay="autoplay" >
 </audio>
 <p id="wan"> 晚 </p>
 <p id="an"> 安 </p>>
