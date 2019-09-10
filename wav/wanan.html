@@ -9,6 +9,7 @@
             background-image: url(峰.jpg);
             background-size: 100% 100%;
             height: 100%;
+            position: absolute;
         }
         @keyframes hh {
 
@@ -31,6 +32,7 @@
             text-align: center;
         }
         #wan{
+            color: white;
             animation: hh 2s infinite;
         }
         #an{
@@ -38,13 +40,28 @@
         }
     </style>
     <script>
+        alert("哩埋吓下你艺");
+        alert("听歌哦");
         alert("整首歌仔艺");
     </script>
+    <script>
+        function audioAutoPLay(id) {
+            var audio = document.getElementById(id);
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady",function () {
+                audio.play();
+            },false);
+            document.addEventListener("YixinJSBridgeReady",function () {
+                audio.play();
+            },false);
+
+        }
+    </script>>
 </head>
-<body>
-    <audio src="wav/1.wav" autoplay="autoplay" >
-        </audio>
-    <p id="wan"> 晚 </p>
-    <p id="an"> 安 </p>>
+<body onload="audioAutoPLay('bgm');">
+<audio  id="bgm" src="wav/1.wav" preload="auto"  autoplay="autoplay" >
+</audio>
+<p id="wan"> 晚 </p>
+<p id="an"> 安 </p>>
 </body>
 </html>
